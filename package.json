@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/edinson-salamanca/tareas-hacer-console/issues"
   },
-  "homepage": "https://github.com/edinson-salamanca/tareas-hacer-console#readme"
+  "homepage": "https://github.com/edinson-salamanca/tareas-hacer-console#readme",
+  "devDependencies": {
+    "prettier": "^2.3.2"
+  }
 }
