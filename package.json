@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/edinson-salamanca/tareas-hacer-console#readme",
   "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.1",
     "prettier": "^2.3.2"
   }
 }
