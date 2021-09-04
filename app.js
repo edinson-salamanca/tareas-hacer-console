@@ -1,8 +1,14 @@
-const { inquirerMenu } = require('./helpers/inquirer');
+const { inquirerMenu, pause } = require('./helpers/inquirer');
 
 const main = async () => {
-    let opt = await inquirerMenu();
-    console.log(opt);
+    let opt = Number;
+
+    do {
+        opt = await inquirerMenu();
+        console.log(opt);
+
+        await pause();
+    } while (opt !== 0);
 };
 
 main();

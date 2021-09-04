@@ -44,7 +44,7 @@ const questions = [
 ];
 
 const inquirerMenu = async () => {
-    console.clear()
+    console.clear();
     showHeader();
     const { option } = await inquirer.prompt(questions);
 
@@ -60,6 +60,20 @@ const showHeader = () => {
 
     console.log(message);
 };
+
+const pause = async () => {
+    const question = [
+        {
+            type: 'input',
+            name: 'enter',
+            message: `Presione ${'enter'.green} para continuar`,
+        },
+    ];
+
+    await inquirer.prompt(question);
+};
+
 module.exports = {
     inquirerMenu,
+    pause,
 };
